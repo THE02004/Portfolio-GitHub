@@ -2,6 +2,7 @@
 
 body {
   background-image: url("test.jpg");
+  background-size: 180%;
   font-family: "Honk", system-ui;
 }
 
@@ -42,7 +43,6 @@ a {
 }
 
 #canvas1 {
-  border: 5px solid black;
   position: relative; /* Changement de la position à relative */
   margin: auto; /* Centre le canvas horizontalement */
   width: 500px; /* Définir la largeur */
@@ -52,3 +52,8 @@ a {
 #Player {
   display: none;
 }
+
+#github-logo {
+  filter: invert(100%);
+}
+
