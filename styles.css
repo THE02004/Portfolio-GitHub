@@ -2,8 +2,18 @@
 
 body {
   background-image: url("test.jpg");
-  background-size: 180%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   font-family: "Honk", system-ui;
+}
+
+/* Media Query pour les tablettes */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 18px; /* Augmentez la taille de la police pour les tablettes */
+  }
 }
 
 h1 {
@@ -50,6 +60,16 @@ a {
 }
 
 #Player {
+  display: none;
+}
+
+#Floor{
+  display: none;
+}
+#FloorLeft{
+  display: none;
+}
+#FloorRight{
   display: none;
 }
 
