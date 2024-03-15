@@ -1,85 +1,86 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Théo Guichard Git</title>
+		<meta name="description" content="Mon Git Hub" />
+		<meta name="keywords" content="clip path, hover effect, card hover, gsap, animation" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/splitting.css" />
+		<link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<h1 class="frame__title">Mon potfolio.<a target="_blank" href="https://github.com/THE02004">github</a></h1>
+				<a class="frame__back" href="index.html">//Retourner au menu principal</a>
+			</div>
+			<div class="title"><span>Bienvenue sur le potfolio</span></div>
+			<p class="subtitle">de Théo Guichard</p>
+			<section class="card-grid">
+				<article class="card">
+				    <div class="card__img" style="background-image:url(Space-invader2.png)"></div>
+				    <span class="card__date" data-splitting>01/07/2023</span>
+				    <h2 class="card__title" data-splitting>Mon Space-invader</h2>
+				    <a href="Space-invader.html" class="card__link" data-splitting>Read the article</a>
+				</article>
 
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio GitHub</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+				<article class="card">
+				    <div class="card__img" style="background-image:url(42_Logo.png)"></div>	
+				    <span class="card__date" data-splitting>06/08/2023</span>
+				    <h2 class="card__title" data-splitting>Ma Piscine à 42</h2>
+				    <a href="#" class="card__link" data-splitting>Read the article</a>
+				</article>
 
-<body>
-    <!-- En-tête -->
-    <header>
-        <h1>Mon Portfolio GitHub</h1>
-    </header>
+				<article class="card">
+				    <div class="card__img" style="background-image:url(Moi.jpg)"></div>
+				    <span class="card__date" data-splitting>25/01/2004</span>
+				    <h2 class="card__title" data-splitting>En savoir + Sur Moi</h2>
+				    <a href="#" class="card__link" data-splitting>Read the article</a>
+				</article>
 
-    <!-- Section des projets -->
-    <section id="projects">
-        <h2>Mes Projets</h2>
-    </section>
+				<article class="card">
+				    <div class="card__img" style="background-image:url(img/img4.jpg)"></div>
+				    <span class="card__date" data-splitting>05/05/2074</span>
+				    <h2 class="card__title" data-splitting>Code CR-9892: Investigation of Neural Network Anomalies</h2>
+				    <a href="#" class="card__link" data-splitting>Read the article</a>
+				</article>
+	
+				<section id="games">
+					<div class="card__img" style="background-image:url(test.jpg)"></div>
+					<span class="card__date2" data-splitting></span>
+					<h2 class="card__title" data-splitting>Petit Jeux</h2>
+					<canvas id="canvas1"></canvas>
+					<img id="Player" src="Person.png">
+					<img id="Floor" src="Floor.png">
+					<img id="FloorLeft" src="FloorLeft.png">
+					<img id="FloorRight" src="FloorRight.png">
+					<script type="module" src="main.js"></script>
+				</section>
 
-    <!-- Section Space Invader -->
-    <section id="space-invader">
-        <h2>Space invader</h2>
-        <div class="space-invader-images">
-        <a target="_blank" href="https://github.com/THE02004/Space-invader">
-            <img src="Space-invader.png" width="500" height="300">
-            <img src="Space-invader2.png" width="500" height="300">
-        </a>
-        </div>
-        <div class="space-invader-text">
-            <p>
-                Bonjour à tous,<br>
-                Je suis Théo Guichard, Je voulais prendre un moment pour vous parler
-                d'un projet que j'ai développé il y a quelque temps : "SpaceInvaders-ThéoGuichard". C'était un jeu que
-                j'ai créé lorsque j'étais encore débutant en programmation.<br>
-                Inspiré par le légendaire "Space Invaders", j'ai décidé de me lancer dans cette aventure en utilisant le
-                langage C et la bibliothèque Raylib. Malheureusement, en raison d'autres priorités et de nouveaux projets,
-                j'ai dû mettre ce jeu en pause pour le moment.<br>
-            </p>
-            <p>
-                Sur mon dépôt GitHub, vous trouverez le code source du jeu. Je tiens à préciser que le projet n'est pas
-                parfait - en fait, il est probablement un peu désorganisé, étant donné que c'était l'un de mes premiers
-                pas dans le domaine de la programmation de jeux. Mais je crois fermement que c'est en faisant des erreurs
-                que l'on apprend et que l'on progresse.<br>
-                le projet est actuellement en pause.
-                Je vous remercie tous pour votre intérêt. Même si ce projet est en veille pour le moment je suis
-                reconnaissant de pouvoir partager mon parcours avec vous.<br>
-            </p>
-        </div>
-    </section>
-
-
-    <!-- Section des petits jeux -->
-    <section id="games">
-        <h2>Petits Jeux</h2>
-        <canvas id="canvas1"></canvas>
-        <img id="Player" src="Person.png">
-        <img id="Floor" src="Floor.png">
-        <img id="FloorLeft" src="FloorLeft.png">
-        <img id="FloorRight" src="FloorRight.png">
-        <script type="module" src="main.js"></script>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-    </section>
-
-    <footer id="footer">
-        <a target="_blank" href="https://github.com/THE02004">
-            <div class="image-wrapper shine">
-                <img id="github-logo" class="shine" src="GitHub-Logo.png" width="50" height="100">
-            </div>
-        </a>
-        <p>&copy; 2024 Théo Guichard Portfolio GitHub</p>
-    </footer>    
-</body>
-
+				<article class="card">
+				    <div class="card__img" style="background-image:url(img/img6.jpg)"></div>
+				    <span class="card__date" data-splitting>07/02/2074</span>
+				    <h2 class="card__title" data-splitting>Maintenance Report 9A-814: Diagnostics and Repair of Com Link 3C-12</h2>
+				    <a href="#" class="card__link" data-splitting>Read the article</a>
+				</article>
+			</section>
+			<div class="frame">
+				<h1 class="frame__title">Clip-path Hover Effect from <a href="https://qu.ai/blog/">Quai Network</a></h1>
+				<a class="frame__back" href="https://tympanus.net/codrops/?p=">//Read the tutorial</a>
+				<a class="frame__prev" href="http://tympanus.net/Development/GooeyCursor/">//Previous demo</a>
+			</div>
+		</main>
+		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+	</body>
+	<script src="js/gsap.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/splitting.min.js"></script>
+	<script type="module" src="js/index.js"></script>
 </html>
