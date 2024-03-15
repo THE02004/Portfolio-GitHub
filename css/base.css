@@ -170,6 +170,7 @@ body #cdawrap {
 }
 
 .frame__prev {
+	color: aliceblue;
 	grid-area: prev;
 }
 
@@ -346,3 +347,16 @@ body #cdawrap {
 	    justify-self: end;
 	}
 }
+
+#footer{
+	text-align: right;
+}
+
+:root::-webkit-scrollbar{
+	display: none;
+  }
+  
+  :root {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+  }
