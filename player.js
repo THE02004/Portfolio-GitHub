@@ -1,3 +1,5 @@
+import.meta.resolve("//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+
 export class Player {
     constructor(game) {
         this.game = game;
@@ -12,18 +14,18 @@ export class Player {
         this.image3 = document.getElementById('FloorRight');
         this.image4 = document.getElementById('FloorLeft');
         this.speed = 0;
-        this.maxSpeed = 0.5;
+        this.maxSpeed = 1.5;
         this.frameX = 0; // Frame horizontale actuelle
         this.frameY = 0;
         this.running = false; // Définit si le joueur est en mode de course
         this.lastDirection = 1; // Stocke la dernière direction du mouvement (1 pour droite, -1 pour gauche)
         this.frameCount = 0; // Compteur de frame
-        this.maxFrameCount = 5; // Nombre maximal de frames dans l'animation
+        this.maxFrameCount = 1; // Nombre maximal de frames dans l'animation
     }
 
     update(input) {
+        // Déterminez la direction et la vitesse du joueur en fonction de l'entrée
         if (!this.running) {
-            // Si le joueur n'est pas en mode de course
             if (input.includes('d') || input.includes('ArrowRight')) {
                 this.speed = this.maxSpeed;
                 this.frameY = 0; // Sélectionner la première ligne de sprites pour la droite
@@ -37,26 +39,33 @@ export class Player {
             }
         }
     
+        // Limitez la position du joueur à l'écran
         if (this.x < 0) this.x = 0; // Limite gauche
         if (this.y < 0) this.y = 0; // Limite supérieure
         if (this.x > this.game.width - this.width) this.x = this.game.width - this.width; // Limite droite
         if (this.y > this.game.height - this.height) this.y = this.game.height - this.height; // Limite inférieure
+    
+        // Mettez à jour la position horizontale du joueur en fonction de sa vitesse
         this.x += this.speed;
     
-        // Gestion des frames pour l'animation
-        if (this.speed !== 0) {
+        // Gérez les frames de l'animation
+        const frameUpdateDelay = 10; // Délai en millisecondes entre chaque mise à jour de frame
+        if (this.frameUpdateTimer === undefined || this.frameUpdateTimer <= 0) {
+            // Mettre à jour la frame seulement si le délai est écoulé
             this.frameCount++;
             if (this.frameCount >= this.maxFrameCount) {
-                this.frameCount = 0; // Réinitialise le compteur si nécessaire
+                this.frameCount = 0; // Réinitialiser la frame si nécessaire
             }
+            this.frameUpdateTimer = frameUpdateDelay; // Réinitialiser le timer
         } else {
-            this.frameCount = 0; // Réinitialise le compteur si le joueur est immobile
+            // Décrémenter le timer
+            this.frameUpdateTimer -= this.game.deltaTime; // Assurez-vous que deltaTime est correctement défini dans votre jeu
         }
     
-        // Vertical
-        const jumpVelocity = -2; // Ajustez cette valeur pour changer la vitesse de saut
-        const gravity = 0.03; // Ajustez cette valeur pour changer la vitesse de chute
-
+        // Gérez le mouvement vertical du joueur
+        const jumpVelocity = -10; // Ajustez cette valeur pour changer la vitesse de saut
+        const gravity = 1; // Ajustez cette valeur pour changer la vitesse de chute
+    
         if ((input.includes('ArrowUp') || input.includes('z')) && this.onGround()) {
             this.vy = jumpVelocity; // Changement de la vitesse de saut
         }
@@ -78,6 +87,7 @@ export class Player {
             this.running = false;
         }
     }
+    
     
 
     draw(context) {
@@ -124,8 +134,21 @@ export class Player {
         const adjustedX = this.x - offsetX;
     
         // Dessiner le joueur en mouvement
-        context.drawImage(this.image, this.width * frameX + 15, 187, this.width, this.height, adjustedX, this.y - offsetY, this.width, this.height);
-    }    
+        context.drawImage(this.image, this.width * frameX + 16, 187, this.width, this.height, adjustedX, this.y - offsetY, this.width, this.height);
+    } 
+
+    drawRight2(context) {
+        const frameY = 0; // Pour la droite
+        const frameX = this.frameCount; // Utilise le compteur de frame pour l'animation
+        const offsetX = (this.width - this.width) / 2; // Offset en x pour centrer l'image
+        const offsetY = (this.height - this.height) / 2 + 30; // Offset en y pour centrer l'image
+        
+        // Ajuster la position horizontale en fonction de la vitesse du joueur
+        const adjustedX = this.x - offsetX;
+    
+        // Dessiner le joueur en mouvement
+        context.drawImage(this.image, this.width * frameX + 140, 187, this.width, this.height, adjustedX, this.y - offsetY, this.width, this.height);
+    }
     
     
     drawLeft(context) {
@@ -135,7 +158,7 @@ export class Player {
         let offsetY = (this.height - this.height) / 2 + 30; // Offset en y pour centrer l'image
         
         // Ajuster la position horizontale en fonction de la vitesse du joueur
-        context.drawImage(this.image, this.width * frameX + 11, 125 * frameY, this.width, this.height, this.x - offsetX, this.y - offsetY, this.width, this.height);
+        context.drawImage(this.image, this.width * frameX + 12, 125 * frameY, this.width, this.height, this.x - offsetX, this.y - offsetY, this.width, this.height);
     }
     
     

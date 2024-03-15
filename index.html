@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
-
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio GitHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <!-- En-tête -->
     <header>
         <h1>Mon Portfolio GitHub</h1>
     </header>
 
+    <!-- Section des projets -->
     <section id="projects">
         <h2>Mes Projets</h2>
-        <!-- Intégrer les informations sur vos projets GitHub ici -->
     </section>
 
+    <!-- Section Space Invader -->
+    <section id="space-invader">
+        <h2>Space invader</h2>
+        <div class="space-invader-images">
+        <a target="_blank" href="https://github.com/THE02004/Space-invader">
+            <img src="Space-invader.png" width="500" height="300">
+            <img src="Space-invader2.png" width="500" height="300">
+        </a>
+        </div>
+        <div class="space-invader-text">
+            <p>
+                Bonjour à tous,<br>
+                Je suis Théo Guichard, Je voulais prendre un moment pour vous parler
+                d'un projet que j'ai développé il y a quelque temps : "SpaceInvaders-ThéoGuichard". C'était un jeu que
+                j'ai créé lorsque j'étais encore débutant en programmation.<br>
+                Inspiré par le légendaire "Space Invaders", j'ai décidé de me lancer dans cette aventure en utilisant le
+                langage C et la bibliothèque Raylib. Malheureusement, en raison d'autres priorités et de nouveaux projets,
+                j'ai dû mettre ce jeu en pause pour le moment.<br>
+            </p>
+            <p>
+                Sur mon dépôt GitHub, vous trouverez le code source du jeu. Je tiens à préciser que le projet n'est pas
+                parfait - en fait, il est probablement un peu désorganisé, étant donné que c'était l'un de mes premiers
+                pas dans le domaine de la programmation de jeux. Mais je crois fermement que c'est en faisant des erreurs
+                que l'on apprend et que l'on progresse.<br>
+                le projet est actuellement en pause.
+                Je vous remercie tous pour votre intérêt. Même si ce projet est en veille pour le moment je suis
+                reconnaissant de pouvoir partager mon parcours avec vous.<br>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Section des petits jeux -->
     <section id="games">
-        <h2>Petit Jeux</h2>
+        <h2>Petits Jeux</h2>
         <canvas id="canvas1"></canvas>
-        <!-- Intégrer vos jeux en js ici -->
         <img id="Player" src="Person.png">
         <img id="Floor" src="Floor.png">
         <img id="FloorLeft" src="FloorLeft.png">
@@ -33,20 +67,19 @@
         <script type="module" src="main.js"></script>
     </section>
 
-    <!-- Insérer la section du jeu entre "Petit Jeux" et "Contact" -->
-    <section id="game-content">
-        <!-- Contenu de votre jeu ici -->
-    </section>
-
+    <!-- Section Contact -->
     <section id="contact">
-        <h3>contact</h3>
+        <h2>Contact</h2>
     </section>
 
-    <footer>
-    <a target="_blank" href="https://github.com/THE02004"><img id="github-logo" src="GitHub-Logo.png" width="200" height="100"></a>
-    <p>&copy; 2024 Théo Guichard Portfolio GitHub</p>
-</footer>
-    
+    <footer id="footer">
+        <a target="_blank" href="https://github.com/THE02004">
+            <div class="image-wrapper shine">
+                <img id="github-logo" class="shine" src="GitHub-Logo.png" width="50" height="100">
+            </div>
+        </a>
+        <p>&copy; 2024 Théo Guichard Portfolio GitHub</p>
+    </footer>    
 </body>
 
 </html>
