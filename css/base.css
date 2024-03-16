@@ -381,3 +381,16 @@ body #cdawrap {
 	scrollbar-width: none;
 	-ms-overflow-style: none;
   }
+
+#flèche{
+	position: relative;
+    filter: invert(100%);
+	margin: 0 -10px -10px 20;
+}
+#flèche2{
+	position: relative;
+    filter: invert(100%);
+	text-align: right;
+	left: 96%;
+	margin: 0 -10px -10px 20;
+}
