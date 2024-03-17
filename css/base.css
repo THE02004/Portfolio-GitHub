@@ -382,16 +382,18 @@ body #cdawrap {
 	-ms-overflow-style: none;
   }
 
-#flèche{
-	position: relative;
+  #flèche {
     filter: invert(100%);
-	margin: 0 -10px -10px 20;
+    margin: 0 -10px -10px 20;
 }
 #flèche2 {
-    position: fixed;
     filter: invert(100%);
-    text-align: right;
-	right: 0%;
+	position: absolute;
+    right: 20px; /* Position horizontale fixe de la flèche 2 */
     margin: 0;
 }
+
+
+
+
 
