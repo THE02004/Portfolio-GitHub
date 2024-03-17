@@ -382,15 +382,20 @@ body #cdawrap {
 	-ms-overflow-style: none;
   }
 
-#flèche{
-	position: relative;
+  #flèche {
+    position: fixed;
     filter: invert(100%);
-	margin: 0 -10px -10px 20;
+    text-align: right;
+    right: 2%; /* Utilisation de pourcentage pour positionner la flèche tout à droite */
+    bottom: 10px; /* Position verticale de la flèche par rapport au bas */
+    margin: 0;
 }
-#flèche2{
-	position: relative;
+
+#flèche2 {
+    position: fixed;
     filter: invert(100%);
-	text-align: right;
-	left: 96%;
-	margin: 0 -10px -10px 20;
+    text-align: right;
+    right: 2%; /* Utilisation de pourcentage pour positionner la flèche tout à droite */
+    bottom: 10px; /* Position verticale de la flèche par rapport au bas */
+    margin: 0;
 }
