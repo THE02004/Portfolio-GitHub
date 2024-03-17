@@ -393,7 +393,8 @@ body #cdawrap {
     margin: 0;
 }
 
-
-
-
-
+#image1:hover {
+    transform: scale(1.05); /* Légèrement agrandir l'image */
+    transition: transform 0.3s ease; /* Transition fluide de 0.3 seconde */
+	margin-bottom: 20px; 
+}
