@@ -389,7 +389,7 @@ body #cdawrap {
 #flèche2 {
     filter: invert(100%);
 	position: absolute;
-    right: 20px; /* Position horizontale fixe de la flèche 2 */
+    right: 0px; /* Position horizontale fixe de la flèche 2 */
     margin: 0;
 }
 
