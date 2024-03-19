@@ -53,7 +53,6 @@
 				    <h2 class="card__title" data-splitting>Autre Projet</h2>
 				    <a href="autreproj.html" class="card__link" data-splitting>Plus d'informations</a>
 				</article>
-				
 				<section id="games">
 					<div class="card__img" style="background-image:url(test.jpg)"></div>
 					<span class="card__date2" data-splitting></span>
@@ -65,7 +64,6 @@
 					<img id="FloorRight" src="FloorRight.png">
 					<script type="module" src="main.js"></script>
 				</section>
-
 				<article class="card">
 				    <div class="card__img" style="background-image:url(mecontacter.jpg)"></div>
 				    <span class="card__date" data-splitting>XX/XX/XXXX</span>
@@ -83,7 +81,7 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
 			const arrowUp = document.getElementById('flèche');
-			const arrowDown = document.getElementById('flèche2');
+			const arrowUp2 = document.getElementById('flèche2');
 			const scrollOptions = {
 				behavior: 'smooth', // Faire défiler en douceur
 				block: 'start' // Faire défiler le début de l'élément dans la vue
@@ -97,7 +95,7 @@
 				});
 			});
 
-			arrowDown.addEventListener('click', function() {
+			arrowUp2.addEventListener('click', function() {
 				window.scrollBy({
 					top: scrollAmount, // Défiler vers le bas
 					behavior: 'smooth' // Défilement en douceur
