@@ -12,16 +12,19 @@
 	--color-bg-date: rgb(96 56 178 / 48%);
 	--color-link-hover: rgb(94 54 176 / 75%);
 	--color-border: rgba(177,177,177,0.3);
+
 }
 
 body {
-	margin: 0;
-	color: var(--color-text);
-	background-color: var(--color-bg);
-	font-family: "ocr-a-std", monospace;
-	text-transform: uppercase;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    font-family: "ocr-a-std", monospace;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Page Loader */
@@ -382,7 +385,7 @@ body #cdawrap {
 	-ms-overflow-style: none;
   }
 
-  #flèche {
+#flèche {
     filter: invert(100%);
     margin: 0 -10px -10px 20;
 }

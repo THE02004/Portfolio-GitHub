@@ -20,7 +20,8 @@
 			<div class="frame">
 				<h1 class="frame__title">Mon portfolio.<a target="_blank" href="https://github.com/THE02004">github</a></h1>
 			</div>
-			<div class="title"><span>Bienvenue sur le portfolio</span></div>
+			<div class="title"><span>Bienvenue sur le portfolio</span>
+			</div>
 			<p class="subtitle">de Théo Guichard</p>
 			<img id="flèche" src="arrow_down.png" width="50" height="50">
 			<img id="flèche2" src="arrow_down.png" width="50" height="50">
@@ -79,6 +80,31 @@
 			</footer>    
 			
 	</body>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const arrowUp = document.getElementById('flèche');
+			const arrowDown = document.getElementById('flèche2');
+			const scrollOptions = {
+				behavior: 'smooth', // Faire défiler en douceur
+				block: 'start' // Faire défiler le début de l'élément dans la vue
+			};
+			const scrollAmount = 500; // Définissez la distance de défilement souhaitée en pixels
+
+			arrowUp.addEventListener('click', function() {
+				window.scrollBy({
+					top: scrollAmount, // Défiler vers le haut
+					behavior: 'smooth' // Défilement en douceur
+				});
+			});
+
+			arrowDown.addEventListener('click', function() {
+				window.scrollBy({
+					top: scrollAmount, // Défiler vers le bas
+					behavior: 'smooth' // Défilement en douceur
+				});
+			});
+		});
+	</script>				
 	<script src="js/gsap.min.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/splitting.min.js"></script>
