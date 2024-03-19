@@ -56,7 +56,7 @@ body {
 }
 
 .js .loading::after {
-    content: "\221E"; /* Code Unicode pour le symbole de l'infini */
+    content: "\221E"; /* le symbole de l'infini */
     font-size: 100px; /* Taille du symbole */
     position: fixed;
     top: 50%;
@@ -178,8 +178,13 @@ body #cdawrap {
 }
 
 .frame__prev {
+	padding-bottom: 20px;
 	color: aliceblue;
 	grid-area: prev;
+}
+
+.marge{
+	padding-bottom: 10px;
 }
 
 .contact-container {
