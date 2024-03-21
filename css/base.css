@@ -239,7 +239,7 @@ body #cdawrap {
 
 .card-grid {
 	display: grid;
-	margin: 10vh 0;
+	margin: 0vh 0;
 	grid-template-columns: 1fr;
 	border-top: 1px solid var(--color-border);
 }
@@ -421,7 +421,7 @@ body #cdawrap {
 }
 
 #background-video {
-    height: 134vh;
+    height: 124vh;
     width: 100%;
     object-fit: cover;
     position: absolute;
@@ -431,12 +431,21 @@ body #cdawrap {
 }
 
 #background-video2 {
-    height: 157vh;
+    height: 142vh;
     width: 100%;
     object-fit: cover;
     position: absolute;
     left: 0;
 	opacity: 0.1;
     top: -100;
+    z-index: -1;
+}
+#background-video3 {
+    height: 7vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 10; /* Ajustez cette valeur selon vos besoins */
     z-index: -1;
 }
