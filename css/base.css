@@ -6,8 +6,8 @@
 
 :root {
 	font-size: 12px;
-	--color-text: rgba(255,255,255,0.95);
-	--color-bg: #0c0b10;
+	--color-text: rgba(255, 252, 252, 0.95);
+	--color-bg: #000000;
 	--color-link: rgb(124 20 244 / 90%);
 	--color-bg-date: rgb(96 56 178 / 48%);
 	--color-link-hover: rgb(94 54 176 / 75%);
@@ -393,21 +393,46 @@ body #cdawrap {
   :root {
 	scrollbar-width: none;
 	-ms-overflow-style: none;
-  }
+}
 
 #flèche {
     filter: invert(100%);
     margin: 0 -10px -10px 20;
+	cursor: pointer;
 }
 #flèche2 {
     filter: invert(100%);
 	position: absolute;
     right: 0px; /* Position horizontale fixe de la flèche 2 */
     margin: 0;
+	cursor: pointer;
+}
+
+#image1 {
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 #image1:hover {
-    transform: scale(1.05); /* Légèrement agrandir l'image */
-    transition: transform 0.3s ease; /* Transition fluide de 0.3 seconde */
-	margin-bottom: 20px; 
+    transform: translateY(-5px); /* Translation vers le haut de l'image de 5 pixels */
+    filter: grayscale(50%) brightness(120%); /* Effet de décoloration et d'augmentation de luminosité */
+}
+
+#background-video {
+    height: 134vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#background-video2 {
+    height: 165vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 200;
+    z-index: -1;
 }
