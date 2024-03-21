@@ -87,6 +87,8 @@ a:hover {
   text-align: center;
   font-size: 1.25rem;
   margin: 0;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* Styles pour le canvas */
@@ -94,8 +96,8 @@ a:hover {
   
 	position: relative;
 	margin: auto;
-	width: 400px;
-	height: 400px;
+	width: 350px;
+	height: 350px;
   }
   
   /* Styles pour les images du jeu */
@@ -255,7 +257,8 @@ body #cdawrap {
 	min-height: 60vh;
 	padding: 4vw;
 	overflow: hidden;
-	border-bottom: 1px solid var(--color-border);	
+	border-bottom: 1px solid var(--color-border);
+	border-right: 1px solid var(--color-border);
 }
 
 .card__img,
@@ -428,11 +431,12 @@ body #cdawrap {
 }
 
 #background-video2 {
-    height: 160vh;
+    height: 157vh;
     width: 100%;
     object-fit: cover;
     position: absolute;
     left: 0;
-    top: 200;
+	opacity: 0.1;
+    top: -100;
     z-index: -1;
 }
