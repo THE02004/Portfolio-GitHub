@@ -421,34 +421,13 @@ body #cdawrap {
 }
 
 #background-video {
-    height: 132vh;
+    height: 130vh;
     width: 100%;
     object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -3;
-	margin: 0
-}
-
-#background-video2 {
-    height: 142vh;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
+    position: fixed;
     left: 0;
 	opacity: 0.1;
-    top: 132vh; /* Positionner au milieu */
-    z-index: -2;
-	margin: 0
-}
-#background-video3 {
-    height: 13vh;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 10; /* Ajustez cette valeur selon vos besoins */
+    top: 0;
     z-index: -1;
-	margin: -8vh 0
+	margin: 0
 }
