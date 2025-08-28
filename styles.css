@@ -1,0 +1,172 @@
+/* styles.css */
+
+/* Styles généraux */
+body {
+  background-image: url("test.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Honk", system-ui;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+:root::-webkit-scrollbar{
+  display: none;
+}
+
+:root {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+/* Media Query pour les tablettes */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 18px; /* Augmentez la taille de la police pour les tablettes */
+  }
+}
+
+/* Styles des titres */
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+/* Styles des sections */
+#projects,
+#contact,
+#games {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Styles des liens */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Styles spécifiques pour un élément avec l'ID "rouge" */
+#rouge {
+  color: rgb(45, 1, 1);
+}
+
+/* Styles pour le canvas */
+#canvas1 {
+  
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+}
+
+/* Styles pour les images du jeu */
+#Player,
+#Floor,
+#FloorLeft,
+#FloorRight {
+  display: none;
+}
+
+/* Styles pour la section Space Invader */
+#space-invader {
+  text-align: center;
+}
+
+.space-invader-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.space-invader-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.space-invader-text p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* Styles pour le logo GitHub */
+#github-logo {
+  position: absolute;
+  filter: invert(100%);
+}
+
+/* Styles pour l'enveloppe de l'image du logo GitHub */
+.image-wrapper {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 2px;
+  display: flex;
+  text-align: right;
+  position: absolute;
+  line-height: 50;
+  left: 50%;
+}
+
+/* Styles pour l'effet de brillance sur le logo GitHub */
+.shine {
+  position: relative;
+  overflow: hidden;
+  width: 8rem;
+  height: 6rem;
+}
+
+.shine::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: -75%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+  z-index: 2;
+}
+
+.shine img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shine:hover::before,
+.shine:focus::before {
+  animation: shine 0.85s forwards;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/* Styles pour le pied de page */
+footer {
+  align-self: flex-end;
+}
+
+/* Ajoutez une classe spécifique pour l'effet de parallaxe */
+footer.parallax {
+  transform: translateY(0); /* Déplacez le pied de page vers le haut pour l'effet de parallaxe */
+}
