@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<style>
+    .lang-switch {
+  position: fixed;      /* reste toujours visible */
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;            /* espace entre les drapeaux */
+  z-index: 1000;        /* au-dessus du contenu */
+}
+
+.lang-switch img {
+  width: 32px;          /* taille des drapeaux */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lang-switch img:hover {
+  transform: scale(1.1); /* petit effet au survol */
+}
+</style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Théo Guichard – New open-source CRM project</title>
+  <meta name="description" content="After a year customizing Perfex CRM (modules, custom), I'm launching my own open-source CRM: simple, efficient, modular." />
+  <meta name="keywords" content="CRM, open-source, Perfex CRM, PHP, Laravel, Vue, modules, Théo Guichard" />
+  <meta name="author" content="Théo Guichard" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/splitting.css" />
+  <link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+      var e, t = document.createElement("style");
+      return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+  </script>
+  <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+</head>
+<body class="loading">
+  <div class="lang-switch">
+  <a href="autreproj.html"><img src="fr_flag.svg" alt="Français"></a>
+  <a href="autreproj_en.html"><img src="en_flag.svg" alt="English"></a>
+  </div>
+  <main>
+    <div class="frame">
+      <h1 class="frame__title">My portfolio. <a target="_blank" href="https://github.com/THE02004">github</a></h1>
+      <a class="frame__back" href="index_en.html">//Back to main menu</a>
+    </div>
+
+    <div class="title"><span>New project</span></div>
+    <p class="subtitle">Open-source CRM</p>
+
+    <div class="info">
+      <p>
+        After spending over a year <strong>modifying Perfex CRM</strong> (module development, fixes, integrations),
+        I decided to <strong>design my own open-source CRM</strong>.
+        Goal: a solution that's <em>simple</em>, <em>efficient</em> and truly <em>modular</em>, designed for dev and business teams.
+      </p>
+
+      <p><strong>Why start from scratch?</strong><br>
+        I learned a lot by <em>customizing</em> Perfex CRM (structure, limits, technical debt).
+        Today I want a clean base: a clear API, independent modules, a modern UX and a testable core.
+      </p>
+
+      <p><strong>Planned key features</strong></p>
+      <ul>
+        <li>Contacts & companies, segments, tags, CSV import/export</li>
+        <li>Sales pipeline (Kanban), opportunities, quotes → invoices</li>
+        <li>Tasks & projects, comments, attachments</li>
+        <li>Emails & templates, interaction tracking, activity timeline</li>
+        <li>Roles, fine-grained permissions, audit log</li>
+        <li>Webhooks & REST API, integrations (SMTP, web, Zapier-like)</li>
+        <li>Multi-language (FR/EN), multi-currency, dark mode</li>
+        <li>Module marketplace (install/enable on the fly)</li>
+      </ul>
+
+      <p><strong>Planned tech stack</strong></p>
+      <ul>
+        <li>Backend: PHP (Laravel), MySQL/MariaDB, Redis (queues/cache)</li>
+        <li>Frontend: Vue 3 + TypeScript + Vite, UI with Tailwind</li>
+        <li>API: REST (JSON), token authentication (Sanctum)</li>
+        <li>Dev: Docker for the environment, PHPUnit/Vitest tests</li>
+      </ul>
+
+      <p><strong>Roadmap (MVP → V1)</strong></p>
+      <ul>
+        <li><em>MVP</em>: contacts/companies base, pipeline deals, auth & roles, API, minimal UI</li>
+        <li><em>V0.2</em>: quotes/invoices, taxes, multi-currency, PDF export</li>
+        <li><em>V0.3</em>: tasks/projects, files, comments</li>
+        <li><em>V1.0</em>: modules/marketplace, webhooks, i18n, installer</li>
+      </ul>
+
+      <p><strong>Status</strong>: in progress — public repository in preparation.</p>
+
+      <p>
+        <a class="frame__prev" target="_blank" href="https://github.com/THE02004/mon-crm-opensource">
+          <i class="fa-brands fa-github"></i> View the GitHub repository (soon)
+        </a>
+      </p>
+
+      <!-- Placeholders pour futures captures -->
+      <!--
+      <img id="screenshot1" src="screenshot_dashboard.png" width="520" height="320" alt="Aperçu dashboard">
+      <img id="screenshot2" src="screenshot_pipeline.png" width="520" height="320" alt="Aperçu pipeline">
+      -->
+
+      <div class="marge"></div>
+
+      <p>
+        <a class="frame__prev" href="index_en.html">
+          <i class="fa-solid fa-arrow-left"></i> Back to main menu
+        </a>
+      </p>
+    </div>
+  </main>
+
+  <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/splitting.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>

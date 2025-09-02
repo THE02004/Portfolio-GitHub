@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr" class="no-js">
+<style>
+    .lang-switch {
+    position: fixed;      /* reste toujours visible */
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px;            /* espace entre les drapeaux */
+    z-index: 1000;        /* au-dessus du contenu */
+    }
+
+    .lang-switch img {
+    width: 32px;          /* taille des drapeaux */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    }
+
+    .lang-switch img:hover {
+    transform: scale(1.1); /* petit effet au survol */
+    }
+</style>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +45,10 @@
     <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 </head>
 <body class="loading">
+    <div class="lang-switch">
+    <a href="Moi.html"><img src="fr_flag.svg" alt="Français"></a>
+    <a href="Moi_en.html"><img src="en_flag.svg" alt="English"></a>
+    </div>
     <main>
         <div class="frame">
             <h1 class="frame__title">Mon potfolio.<a target="_blank" href="https://github.com/THE02004">github</a></h1>

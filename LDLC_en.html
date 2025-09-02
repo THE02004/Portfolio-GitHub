@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<style>
+    .lang-switch {
+  position: fixed;      /* reste toujours visible */
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;            /* espace entre les drapeaux */
+  z-index: 1000;        /* au-dessus du contenu */
+}
+
+.lang-switch img {
+  width: 32px;          /* taille des drapeaux */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lang-switch img:hover {
+  transform: scale(1.1); /* petit effet au survol */
+}
+</style>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Théo Guichard portfolio</title>
+    <meta name="description" content="Information about Théo Guichard's journey at L'École LDLC" />
+    <meta name="keywords" content="Théo Guichard, LDLC School, digital, entrepreneurship" />
+    <meta name="author" content="Théo Guichard" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/splitting.css" />
+    <link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+    <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+</head>
+<body class="loading">
+    <div class="lang-switch">
+    <a href="LDLC.html"><img src="fr_flag.svg" alt="Français"></a>
+    <a href="LDLC_en.html"><img src="en_flag.svg" alt="English"></a>
+    </div>
+    <main>
+        <div class="frame">
+            <h1 class="frame__title">My portfolio.<a target="_blank" href="https://github.com/THE02004">github</a></h1>
+            <a class="frame__back" href="index_en.html">//Back to main menu</a>
+        </div>
+        <div class="title"><span>Information</span></div>
+        <p class="subtitle">My journey at LDLC School</p>
+        <div class="info">
+            <p>
+                Hello everyone,<br>
+            </p>
+            <p>
+                I am Théo Guichard, a student at LDLC School, an innovative school near Lyon that trains in digital technologies and entrepreneurship. This three-year program allows me to develop technical, managerial and human skills through a hands-on approach.
+            </p>
+            <p>
+                The curriculum is structured around three main areas: <strong>Digital Technologies & Innovation</strong>, <strong>Entrepreneurship & Management</strong> and <strong>Humanities & Perspectives</strong>. I learn not only software development tools but also team management, project leadership and business creation.
+            </p>
+            <p>
+                The training is based on the principle of <em>learning by doing</em> with internships, seminars and numerous concrete projects. It's a stimulating environment where we learn to work in teams, to innovate and to turn ideas into tangible achievements.
+            </p>
+            <p>
+                My goal is clear: to become a <strong>project manager in software development</strong>.
+                I want to combine my programming skills with a global vision of project management to build useful and innovative solutions.
+            </p>
+            <p>
+                Each step of this journey brings me closer to that dream job, and I'm excited to share this adventure and my future projects with you.<br>
+            </p>
+            <p>
+  <a class="frame__prev" target="_blank" href="https://www.lecole-ldlc.com/">
+    <i class="fas fa-university"></i> Official website of LDLC School
+  </a>
+</p>
+
+<p>
+  <a class="frame__prev" href="index_en.html">
+    <i class="fas fa-arrow-left"></i> Back to main menu
+  </a>
+</p>
+        </div>
+    </main>
+        <footer id="footer">
+            <p>&copy; 2024 Théo Guichard Portfolio GitHub</p>
+            <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+        </footer>  
+    <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+</body>
+<script src="js/gsap.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/splitting.min.js"></script>
+<script type="module" src="js/index.js"></script>
+</html>

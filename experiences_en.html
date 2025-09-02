@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<style>
+    .lang-switch {
+  position: fixed;      /* reste toujours visible */
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;            /* espace entre les drapeaux */
+  z-index: 1000;        /* au-dessus du contenu */
+}
+
+.lang-switch img {
+  width: 32px;          /* taille des drapeaux */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lang-switch img:hover {
+  transform: scale(1.1); /* petit effet au survol */
+}
+</style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My professional experiences — Théo Guichard</title>
+  <meta name="description" content="Professional experiences of Théo Guichard: freelance, Dive Lyon, projects and internships." />
+  <meta name="author" content="Théo Guichard" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/splitting.css" />
+  <link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+      var e, t = document.createElement("style");
+      t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t),
+      e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")),
+      t.parentNode.removeChild(t);
+      return e;
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+  </script>
+</head>
+<body class="loading">
+  <div class="lang-switch">
+  <a href="experiences.html"><img src="fr_flag.svg" alt="Français"></a>
+  <a href="experiences_en.html"><img src="en_flag.svg" alt="English"></a>
+  </div>
+  <main>
+    <div class="frame">
+      <h1 class="frame__title">My portfolio. <a target="_blank" href="https://github.com/THE02004">github</a></h1>
+      <a class="frame__back" href="index_en.html">//Back to main menu</a>
+      <br/>
+    </div>
+
+    <div class="title"><span>My professional experiences</span></div>
+    <p class="subtitle">An overview of my professional journey.</p>
+
+    <div class="info">
+      <!-- FREELANCE -->
+      <h2>Freelance developer — Small businesses</h2>
+      <p class="meta">2024 — <strong>August 2025</strong> (activity closed to focus on Dive Lyon)</p>
+      <ul>
+        <li>Customization and optimization of <strong>Perfex CRM</strong> (modules, fields, workflows, permissions).</li>
+        <li><strong>Python / PHP</strong> automations: data processing, document generation, inconsistency detection.</li>
+        <li>Development of internal interfaces to simplify order reception and operational tracking.</li>
+        <li>Result-oriented delivery: short documentation, preventive maintenance, post-delivery support.</li>
+      </ul>
+      <p>Key skills: autonomy, client relations, requirement scoping, prioritization, software quality.</p>
+
+      <hr>
+
+      <!-- DIVE LYON -->
+      <h2>Full Stack Developer — Dive Lyon</h2>
+      <p class="meta">Internship (2024) → Subcontracting (2025)</p>
+      <ul>
+        <li><strong>Stock & orders</strong>: dedicated <strong>PHP</strong> page to speed up reception and flow management.</li>
+        <li><strong>Automation</strong>: <strong>Python</strong> scripts (tank tracking, consistency checks, data consolidation).</li>
+        <li><strong>Perfex CRM</strong>: business-specific adaptations (processes, views, exports) to fit operational needs.</li>
+        <li><strong>Revenue analysis</strong>: tracking tools (up-to-date product bases, simple and actionable reporting).</li>
+      </ul>
+      <p>
+        At the end of the internship, the company wanted to keep me as a <strong>subcontractor</strong> and helped me create my <strong>sole proprietorship</strong>. This transition allowed me to move from an executing role to an autonomous service provider responsible from start to finish.
+      </p>
+
+      <hr>
+
+      <!-- MINAGE ETHEREUM -->
+      <h2>Personal project — Ethereum mining</h2>
+      <p class="meta">2021 — 2022</p>
+      <ul>
+        <li>Assembly and management of several <strong>mining rigs</strong>: component selection, assembly, tuning.</li>
+        <li><strong>Performance/energy</strong> optimization: hashrate, undervolt, monitoring and stability.</li>
+        <li><strong>Linux / HiveOS</strong> operation: supervision, alerting, updates, troubleshooting.</li>
+      </ul>
+      <p>
+        This project taught me to work alone, manage a production system and opened the door to <strong>finance</strong> and <strong>blockchain</strong>, fields that fascinate me today.
+      </p>
+
+      <hr>
+
+      <!-- STAGES -->
+      <h2>First internships — Discovering the working world</h2>
+      <p class="meta">2019 — 2023</p>
+      <ul>
+        <li><strong>Concept Son Média France</strong> (2023) — Event management & technical logistics.</li>
+        <li><strong>Préfecture de Bourg-en-Bresse</strong> (2021) — IT support and maintenance.</li>
+        <li><strong>EEA Bourg-en-Bresse</strong> (2021) — Introduction to electricity (field & safety).</li>
+        <li><strong>Razurel et Fils, Viriat</strong> (2019) — Home appliances, first customer contact.</li>
+      </ul>
+
+      <br>
+      <a class="frame__prev" href="index_en.html">
+        <i class="fas fa-arrow-left"></i> Back to main menu
+      </a>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2024 Théo Guichard Portfolio GitHub</p>
+    <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+  </footer>
+
+  <script src="js/gsap.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/splitting.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>

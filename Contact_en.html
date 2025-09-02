@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr" class="no-js">
-  <style>
+<html lang="en" class="no-js">
+<style>
     .lang-switch {
   position: fixed;      /* reste toujours visible */
   top: 15px;
@@ -25,7 +25,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Théo Guichard – Portfolio</title>
-  <meta name="description" content="Contactez Théo Guichard" />
+  <meta name="description" content="Contact Théo Guichard" />
   <meta name="author" content="Théo Guichard" />
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
@@ -183,24 +183,24 @@
 </head>
 
 <body class="loading">
-   <div class="lang-switch">
+  <div class="lang-switch">
   <a href="Contact.html"><img src="fr_flag.svg" alt="Français"></a>
   <a href="Contact_en.html"><img src="en_flag.svg" alt="English"></a>
   </div>
   <main>
     <div class="frame">
       <h1 class="frame__title">
-        Mon portfolio.
+        My portfolio.
         <a target="_blank" href="https://github.com/THE02004">
           <i class="fa-brands fa-github"></i> github
         </a>
       </h1>
-      <a class="frame__back" href="index.html">
-        <i></i> //Retourner au menu principal
+      <a class="frame__back" href="index_en.html">
+        <i></i> //Back to main menu
       </a>
     </div>
 
-    <div class="title"><span>Me contacter</span></div>
+    <div class="title"><span>Contact me</span></div>
 
     <div class="contacts-column">
       <div class="contact-container">
@@ -217,7 +217,7 @@
         </a>
         <div class="contact-actions">
           <button id="copy-email" class="btn-copy" type="button">
-            <i class="fa-regular fa-copy"></i> Copier
+            <i class="fa-regular fa-copy"></i> Copy
           </button>
         </div>
       </div>
@@ -225,11 +225,11 @@
       <div class="contact-container">
         <img class="contact-icon" src="pdf_icon.png" alt="CV PDF">
         <a class="frame__prev2" href="CV-Theo-Guichard.pdf" download="CV_Theo_Guichard.pdf">
-          Télécharger mon CV en Français (PDF)
+          Download my CV in French (PDF)
         </a>
         <div class="contact-actions">
           <a class="btn-copy btn-download" href="CV-Theo-Guichard.pdf" target="_blank" rel="noopener">
-            <i class="fa-solid fa-eye"></i> Voir
+            <i class="fa-solid fa-eye"></i> View
           </a>
         </div>
       </div>
@@ -238,18 +238,18 @@
       <div class="contact-container">
         <img class="contact-icon" src="pdf_icon.png" alt="CV PDF (EN)">
         <a class="frame__prev2" href="Theo_Guichard_Resume_EN.pdf" download="Theo_Guichard_Resume_EN.pdf">
-          Télécharger mon CV en Anglais (PDF)
+          Download my CV in English (PDF)
         </a>
         <div class="contact-actions">
           <a class="btn-copy btn-download" href="Theo_Guichard_Resume_EN.pdf" target="_blank" rel="noopener">
-            <i class="fa-solid fa-eye"></i> Voir
+            <i class="fa-solid fa-eye"></i> View
           </a>
         </div>
       </div>
 
     <div class="info">
-      <a class="frame__prev" href="index.html">
-        <i class="fa-solid fa-arrow-left"></i> Retourner au menu principal
+      <a class="frame__prev" href="index_en.html">
+        <i class="fa-solid fa-arrow-left"></i> Back to main menu
       </a>
     </div>
   </main>
@@ -267,8 +267,8 @@
         copyBtn.addEventListener('click', async () => {
           try {
             await navigator.clipboard.writeText(email);
-            copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copié';
-            setTimeout(() => copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i> Copier', 1500);
+            copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copied';
+            setTimeout(() => copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy', 1500);
           } catch (e) {
             const textarea = document.createElement('textarea');
             textarea.value = email;
@@ -276,8 +276,8 @@
             textarea.select();
             document.execCommand('copy');
             textarea.remove();
-            copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copié';
-            setTimeout(() => copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i> Copier', 1500);
+            copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copied';
+            setTimeout(() => copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy', 1500);
           }
         });
       }
