@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr" class="no-js">
+<style>
+    .lang-switch {
+  position: fixed;      /* reste toujours visible */
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;            /* espace entre les drapeaux */
+  z-index: 1000;        /* au-dessus du contenu */
+}
+
+.lang-switch img {
+  width: 32px;          /* taille des drapeaux */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lang-switch img:hover {
+  transform: scale(1.1); /* petit effet au survol */
+}
+</style>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +45,10 @@
     <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 </head>
 <body class="loading">
+    <div class="lang-switch">
+    <a href="42.html"><img src="fr_flag.svg" alt="Français"></a>
+    <a href="42_en.html"><img src="en_flag.svg" alt="English"></a>
+    </div>
     <main>
         <div class="frame">
             <h1 class="frame__title">Mon potfolio.<a target="_blank" href="https://github.com/THE02004">github</a></h1>
@@ -37,29 +62,30 @@
                 Bonjour à tous,<br>
             </p>
             <p>
-                Je suis Théo Guichard, et je suis ravi de partager avec vous mon parcours à l'école 42 à travers mon dépôt GitHub.
-                À 42, j'ai eu l'opportunité de travailler sur une variété d'exercices et de projets, chacun représentant un défi
-                unique et une occasion d'apprentissage.<br>
-                Sur mon dépôt GitHub, vous trouverez une collection de mes exercices réalisés à 42. Chaque exercice est le fruit
-                d'un apprentissage continu, d'une résolution de problèmes et d'une collaboration au sein de la communauté 42.<br>
+                Je suis Théo Guichard et je souhaite partager avec vous mon parcours à l'école 42.  
+                Cette aventure commence par la fameuse <strong>Piscine</strong> : un mois intensif, sans cours magistraux ni professeurs, 
+                où l’on apprend en autonomie et grâce à l’entraide entre étudiants.  
+                Durant ces quatre semaines, le rythme est extrême : pas vraiment de week-ends, peu de pauses, et des journées 
+                qui se terminent souvent tard dans la nuit. L’objectif est de tester notre endurance, notre motivation et notre 
+                capacité à apprendre à apprendre.  
             </p>
             <p>
-                Je tiens à souligner que ces exercices ne représentent pas seulement des lignes de code, mais aussi des heures de
-                travail acharné, de débats passionnés et de découvertes fascinantes. Chaque exercice est une pièce du puzzle qui
-                constitue mon expérience à 42, une école qui valorise l'apprentissage autonome, la collaboration et la créativité.<br>
+                C’est une expérience unique qui forge la rigueur, l’organisation sous pression et l’esprit d’équipe.  
+                Derrière chaque exercice se cachent des heures de réflexion, de débogage, de travail collectif et de persévérance.  
+                Chaque projet est une pièce du puzzle qui constitue mon expérience à 42, une école qui valorise l’autonomie, 
+                la collaboration et la créativité.  
             </p>
             <p>
-                Alors, n'hésitez pas à explorer mon dépôt GitHub et à découvrir les projets sur lesquels j'ai travaillé. J'espère que
-                vous trouverez autant de plaisir à les parcourir que j'en ai eu à les réaliser.<br>
+                Sur mon dépôt GitHub, vous trouverez une collection de ces projets et exercices réalisés pendant et après la Piscine.  
+                J’espère que vous prendrez autant de plaisir à les découvrir que j’en ai eu à les réaliser.<br>
                 Merci de votre intérêt.
             </p>
             <div class="marge">
-            <p>
-            <a class="frame__prev" target="_blank" href="https://github.com/THE02004/Piscine-">
-                <i class="fas fa-code"></i> Collection de mes exercices réalisés à 42
-            </a>
-            </p>
-
+                <p>
+                    <a class="frame__prev" target="_blank" href="https://github.com/THE02004/Piscine-">
+                        <i class="fas fa-code"></i> Collection de mes exercices réalisés à 42
+                    </a>
+                </p>
             <p>
             <a class="frame__prev" href="index.html">
                 <i class="fas fa-arrow-left"></i> Retourner au menu principal
