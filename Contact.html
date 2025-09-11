@@ -2,25 +2,25 @@
 <html lang="fr" class="no-js">
   <style>
     .lang-switch {
-  position: fixed;      /* reste toujours visible */
-  top: 15px;
-  right: 15px;
-  display: flex;
-  gap: 10px;            /* espace entre les drapeaux */
-  z-index: 1000;        /* au-dessus du contenu */
-}
+      position: fixed;      /* reste toujours visible */
+      top: 15px;
+      right: 15px;
+      display: flex;
+      gap: 10px;            /* espace entre les drapeaux */
+      z-index: 1000;        /* au-dessus du contenu */
+    }
 
-.lang-switch img {
-  width: 32px;          /* taille des drapeaux */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
+    .lang-switch img {
+      width: 32px;          /* taille des drapeaux */
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
 
-.lang-switch img:hover {
-  transform: scale(1.1); /* petit effet au survol */
-}
-</style>
+    .lang-switch img:hover {
+      transform: scale(1.1); /* petit effet au survol */
+    }
+  </style>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -161,82 +161,82 @@
     }
 
     .btn-download {
-    margin-left: 8px;
-    text-decoration: none;
+      margin-left: 8px;
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body class="loading">
    <div class="lang-switch">
-  <a href="Contact.html"><img src="fr_flag.svg" alt="Français"></a>
-  <a href="Contact_en.html"><img src="en_flag.svg" alt="English"></a>
-  </div>
-  <main>
+      <a href="Contact.html"><img src="fr_flag.svg" alt="Français"></a>
+      <a href="Contact_en.html"><img src="en_flag.svg" alt="English"></a>
+   </div>
+   <main>
       <div class="frame">
-      <h1 class="frame__title">Mon portfolio. <a target="_blank" href="https://github.com/THE02004">github</a></h1>
-      <a class="frame__back" href="index.html">//Retourner au menu principal</a>
-    </div>
-    
+         <h1 class="frame__title">Mon portfolio. <a target="_blank" href="https://github.com/THE02004">github</a></h1>
+         <a class="frame__back" href="index.html">//Retourner au menu principal</a>
+      </div>
+      
+      <div class="title"><span>Me contacter</span></div>
 
-    <div class="title"><span>Me contacter</span></div>
+      <div class="contacts-column">
+         <div class="contact-container">
+            <img class="contact-icon" src="linkedin_black_logo_icon.png" alt="LinkedIn">
+            <a class="frame__prev2" target="_blank" href="https://www.linkedin.com/in/th%C3%A9o-guichard-9b30832b9/">
+              LinkedIn – Théo Guichard
+            </a>
+         </div>
 
-    <div class="contacts-column">
-      <div class="contact-container">
-        <img class="contact-icon" src="linkedin_black_logo_icon.png" alt="LinkedIn">
-        <a class="frame__prev2" target="_blank" href="https://www.linkedin.com/in/th%C3%A9o-guichard-9b30832b9/">
-          LinkedIn – Théo Guichard
-        </a>
+         <div class="contact-container">
+            <img class="contact-icon" src="gmail_black.png" alt="Email">
+            <a id="email-link" class="frame__prev2" href="mailto:theo.guichard01@gmail.com">
+              theo.guichard01@gmail.com
+            </a>
+            <div class="contact-actions">
+              <button id="copy-email" class="btn-copy" type="button">
+                <i class="fa-regular fa-copy"></i> Copier
+              </button>
+            </div>
+         </div>
+
+         <div class="contact-container">
+            <img class="contact-icon" src="pdf_icon.png" alt="CV PDF">
+            <a class="frame__prev2" href="CV-Theo-Guichard.pdf" download="CV_Theo_Guichard.pdf">
+              Télécharger mon CV en Français (PDF)
+            </a>
+            <div class="contact-actions">
+              <a class="btn-copy btn-download" href="CV-Theo-Guichard.pdf" target="_blank" rel="noopener">
+                <i class="fa-solid fa-eye"></i> Voir
+              </a>
+            </div>
+         </div> <!-- fermeture OK -->
+
+         <div class="contact-container">
+            <img class="contact-icon" src="pdf_icon.png" alt="CV PDF (EN)">
+            <a class="frame__prev2" href="Theo_Guichard_Resume_EN.pdf" download="Theo_Guichard_Resume_EN.pdf">
+              Télécharger mon CV en Anglais (PDF)
+            </a>
+            <div class="contact-actions">
+              <a class="btn-copy btn-download" href="Theo_Guichard_Resume_EN.pdf" target="_blank" rel="noopener">
+                <i class="fa-solid fa-eye"></i> Voir
+              </a>
+            </div>
+         </div>
       </div>
 
-      <div class="contact-container">
-        <img class="contact-icon" src="gmail_black.png" alt="Email">
-        <a id="email-link" class="frame__prev2" href="mailto:theo.guichard01@gmail.com">
-          theo.guichard01@gmail.com
-        </a>
-        <div class="contact-actions">
-          <button id="copy-email" class="btn-copy" type="button">
-            <i class="fa-regular fa-copy"></i> Copier
-          </button>
-        </div>
+      <div class="info">
+         <a class="frame__prev" href="index.html">
+            <i class="fa-solid fa-arrow-left"></i> Retourner au menu principal
+         </a>
       </div>
+   </main>
 
-      <div class="contact-container">
-        <img class="contact-icon" src="pdf_icon.png" alt="CV PDF">
-        <a class="frame__prev2" href="CV-Theo-Guichard.pdf" download="CV_Theo_Guichard.pdf">
-          Télécharger mon CV en Français (PDF)
-        </a>
-        <div class="contact-actions">
-          <a class="btn-copy btn-download" href="CV-Theo-Guichard.pdf" target="_blank" rel="noopener">
-            <i class="fa-solid fa-eye"></i> Voir
-          </a>
-        </div>
-              <div class="contact-container">
-        <img class="contact-icon" src="pdf_icon.png" alt="CV PDF (EN)">
-        <a class="frame__prev2" href="Theo_Guichard_Resume_EN.pdf" download="Theo_Guichard_Resume_EN.pdf">
-          Télécharger mon CV en Anglais (PDF)
-        </a>
-        <div class="contact-actions">
-          <a class="btn-copy btn-download" href="Theo_Guichard_Resume_EN.pdf" target="_blank" rel="noopener">
-            <i class="fa-solid fa-eye"></i> Voir
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
+   <footer id="footer">
+      <p>&copy; 2024 Théo Guichard – Portfolio GitHub</p>
+   </footer>
 
-    <div class="info">
-      <a class="frame__prev" href="index.html">
-        <i class="fa-solid fa-arrow-left"></i> Retourner au menu principal
-      </a>
-    </div>
-  </main>
-
-  <footer id="footer">
-    <p>&copy; 2024 Théo Guichard – Portfolio GitHub</p>
-  </footer>
-
-  <script>
+   <script>
     // Copier l'email
     (function(){
       const copyBtn = document.getElementById('copy-email');
@@ -260,6 +260,6 @@
         });
       }
     })();
-  </script>
+   </script>
 </body>
 </html>

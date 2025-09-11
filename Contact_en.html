@@ -2,24 +2,24 @@
 <html lang="en" class="no-js">
 <style>
     .lang-switch {
-  position: fixed;      /* reste toujours visible */
-  top: 15px;
-  right: 15px;
-  display: flex;
-  gap: 10px;            /* espace entre les drapeaux */
-  z-index: 1000;        /* au-dessus du contenu */
-}
+      position: fixed;      /* always visible */
+      top: 15px;
+      right: 15px;
+      display: flex;
+      gap: 10px;            
+      z-index: 1000;        
+    }
 
-.lang-switch img {
-  width: 32px;          /* taille des drapeaux */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
+    .lang-switch img {
+      width: 32px;          
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
 
-.lang-switch img:hover {
-  transform: scale(1.1); /* petit effet au survol */
-}
+    .lang-switch img:hover {
+      transform: scale(1.1);
+    }
 </style>
 <head>
   <meta charset="UTF-8" />
@@ -127,13 +127,12 @@
       }
     }
 
-    /* Bouton Copier en violet */
     .btn-copy {
       display: inline-flex; align-items: center; gap: 6px;
       padding: 7px 12px;
       border-radius: 10px;
       border: none;
-      background: #6c63ff; /* violet */
+      background: #6c63ff;
       color: white;
       text-decoration: none;
       cursor: pointer;
@@ -167,16 +166,16 @@
     }
 
     .btn-download {
-    margin-left: 8px;
-    text-decoration: none;
+      margin-left: 8px;
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body class="loading">
   <div class="lang-switch">
-  <a href="Contact.html"><img src="fr_flag.svg" alt="Français"></a>
-  <a href="Contact_en.html"><img src="en_flag.svg" alt="English"></a>
+    <a href="Contact.html"><img src="fr_flag.svg" alt="Français"></a>
+    <a href="Contact_en.html"><img src="en_flag.svg" alt="English"></a>
   </div>
   <main>
     <div class="frame">
@@ -223,7 +222,9 @@
             <i class="fa-solid fa-eye"></i> View
           </a>
         </div>
-              <div class="contact-container">
+      </div> <!-- ✅ fermé correctement -->
+
+      <div class="contact-container">
         <img class="contact-icon" src="pdf_icon.png" alt="CV PDF (EN)">
         <a class="frame__prev2" href="Theo_Guichard_Resume_EN.pdf" download="Theo_Guichard_Resume_EN.pdf">
           Download my CV in English (PDF)
@@ -233,7 +234,6 @@
             <i class="fa-solid fa-eye"></i> View
           </a>
         </div>
-      </div>
       </div>
     </div>
 
@@ -249,7 +249,7 @@
   </footer>
 
   <script>
-    // Copier l'email
+    // Copy email
     (function(){
       const copyBtn = document.getElementById('copy-email');
       const email = 'theo.guichard01@gmail.com';
