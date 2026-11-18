@@ -1,76 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr" class="no-js">
-<style>
-    .lang-switch {
-    position: fixed;      /* reste toujours visible */
-    top: 15px;
-    right: 15px;
-    display: flex;
-    gap: 10px;            /* espace entre les drapeaux */
-    z-index: 1000;        /* au-dessus du contenu */
-    }
-
-    .lang-switch img {
-    width: 32px;          /* taille des drapeaux */
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    }
-
-    .lang-switch img:hover {
-    transform: scale(1.1); /* petit effet au survol */
-    }
-</style>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Théo Guichard · À propos de moi</title>
-    <meta name="description" content="Portfolio de Théo Guichard : projets d’innovation, développement et recherche d’alternance à Lyon." />
-    <meta name="keywords" content="space invader, Théo Guichard, jeu, GitHub, Raylib, programmation, pause" />
-    <meta name="author" content="Théo Guichard" />
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link rel="stylesheet" type="text/css" href="css/splitting.css" />
-    <link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script>
-        document.documentElement.className = "js";
-        var supportsCssVars = function() {
-            var e, t = document.createElement("style");
-            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
-        };
-        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-    </script>
-    <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
-</head>
-<body class="loading">
-    <div class="lang-switch">
-    <a href="Moi.html"><img src="fr_flag.svg" alt="Français"></a>
-    <a href="Moi_en.html"><img src="en_flag.svg" alt="English"></a>
-    </div>
-    <main>
-        <div class="frame">
-            <h1 class="frame__title">Mon portfolio.<a target="_blank" href="https://github.com/THE02004">github</a></h1>
-            <a class="frame__back" href="index.html">//Retourner au menu principal</a>
-            <br/>
-        </div>
-        <div class="title"><span>À propos de moi</span></div>
-        <div class="info">
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>À propos · Théo Guichard</title><meta name="description" content="Portfolio de Théo Guichard, étudiant à IRIIG en recherche d’alternance en innovation à Lyon."><link rel="icon" href="favicon.ico"><link rel="stylesheet" href="css/portfolio.css"></head><body><a class="skip" href="#main">Aller au contenu</a><header><div class="wrap bar"><a class="brand" href="index.html"><span class="monogram" aria-hidden="true">tg</span>Théo Guichard</a><nav aria-label="Navigation principale"><a href="autreproj.html">Projets</a><a href="experiences.html">Expériences</a><a href="Moi.html" aria-current="page">À propos</a><a href="LDLC.html">Formation</a><a href="Contact.html">Contact</a></nav><div class="lang"><a hreflang="en" lang="en" href="Moi_en.html">EN</a></div></div></header><main id="main" class="wrap"><article class="detail"><a class="back" href="index.html">← Accueil</a><h1>À propos</h1><div class="info">
             <p>Étudiant en management de l’innovation à IRIIG, je recherche une alternance de 18 à 24 mois à Lyon et ses alentours. J’échange avec les utilisateurs et les partenaires pour comprendre leurs contraintes, comparer les solutions et chiffrer un premier test.</p>
             <p>Chez Dive Lyon, j’ai développé des outils pour les équipes qui réceptionnent les commandes et vérifient les données d’exploitation. D’abord stagiaire en 2024, j’ai poursuivi en sous-traitance en 2025. <a href="experiences.html">Voir mes réalisations chez Dive</a>.</p>
             <p>En exploitant mes propres machines de calcul, je me suis posé une question : comment un producteur pourrait-il tirer davantage de valeur de son électricité en vendant de la puissance de calcul ? C’est le point de départ de <a href="autreproj.html">DCR Solutions</a>.</p>
-            <p><a href="index.html">Retour au portfolio</a></p>
+            <p></p>
         </div>
-    </main>
-    <footer id="footer">
-            <p>&copy; 2024 Théo Guichard Portfolio GitHub</p>
-            <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
-    </footer> 
-    <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
-</body>
-<script src="js/gsap.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/splitting.min.js"></script>
-<script type="module" src="js/index.js"></script>
-</html>
+    </article></main><footer><div class="wrap"><span>Théo Guichard</span><div><a href="Contact.html">Contact</a><a href="https://github.com/THE02004">GitHub ↗</a></div></div></footer></body></html>

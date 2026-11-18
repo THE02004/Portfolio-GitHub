@@ -1,255 +1,39 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<style>
-    .lang-switch {
-      position: fixed;      /* always visible */
-      top: 15px;
-      right: 15px;
-      display: flex;
-      gap: 10px;            
-      z-index: 1000;        
-    }
-
-    .lang-switch img {
-      width: 32px;          
-      height: auto;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .lang-switch img:hover {
-      transform: scale(1.1);
-    }
-</style>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Théo Guichard – Portfolio</title>
-  <meta name="description" content="Contact Théo Guichard" />
-  <meta name="author" content="Théo Guichard" />
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/splitting.css" />
-  <link rel="stylesheet" href="css/splitting-cells.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <style>
-    html, body { height: 100%; }
-    *, *::before, *::after { box-sizing: border-box; }
-    body {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-    }
-
-    main {
-      flex: 1;
-      width: 100%;
-      margin: 0;
-      padding: clamp(16px, 2vw, 32px);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .frame__title {
-      margin: 0;
-      font-size: 1.25rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .frame__title a { text-decoration: none; }
-    .frame__back {
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .title span {
-      display: block;
-      text-align: center;
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      font-weight: 900;
-      border-bottom: 3px solid currentColor;
-      padding-bottom: 8px;
-      margin: 40px auto 30px;
-    }
-
-    .contacts-column {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      width: 100%;
-      max-width: 600px;
-    }
-
-    .contact-container {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 16px 20px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.03);
-      width: 100%;
-      justify-content: center;
-    }
-
-    .contact-icon {
-      width: 44px; height: 44px;
-      object-fit: contain;
-      filter: invert(1) hue-rotate(180deg) contrast(1.05) brightness(1.05);
-    }
-
-    .frame__prev2 {
-      text-decoration: none;
-      font-weight: 600;
-      letter-spacing: .02em;
-      overflow-wrap: anywhere;
-    }
-
-    .contact-actions {
-      display: inline-flex;
-    }
-
-     @media (max-width: 480px) {
-      .contact-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      .frame__prev2 {
-        text-align: center;
-      }
-    }
-
-    .btn-copy {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 7px 12px;
-      border-radius: 10px;
-      border: none;
-      background: #6c63ff;
-      color: white;
-      text-decoration: none;
-      cursor: pointer;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-    .btn-copy:hover {
-      background: #5548e5;
-    }
-
-    .info {
-      margin-top: auto;
-      text-align: center;
-      padding-top: 40px;
-    }
-    .frame__prev {
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 1rem;
-    }
-
-    #footer {
-      margin-top: auto;
-      padding: 14px 20px;
-      text-align: center;
-      opacity: 0.85;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      width: 100%;
-    }
-
-    .btn-download {
-      margin-left: 8px;
-      text-decoration: none;
-    }
-  </style>
-</head>
-
-<body class="loading">
-  <div class="lang-switch">
-    <a href="Contact.html"><img src="fr_flag.svg" alt="Français"></a>
-    <a href="Contact_en.html"><img src="en_flag.svg" alt="English"></a>
-  </div>
-  <main>
-    <div class="frame">
-      <h1 class="frame__title">
-        My portfolio.
-        <a target="_blank" href="https://github.com/THE02004">
-          <i class="fa-brands fa-github"></i> github
-        </a>
-      </h1>
-      <a class="frame__back" href="index_en.html">
-        <i></i> //Back to main menu
-      </a>
-    </div>
-
-    <div class="title"><span>Contact me</span></div>
-
-    <div class="contacts-column">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contact · Théo Guichard</title><meta name="description" content="Portfolio of Théo Guichard, an IRIIG student looking for an innovation apprenticeship in Lyon."><link rel="icon" href="favicon.ico"><link rel="stylesheet" href="css/portfolio.css"></head><body><a class="skip" href="#main">Skip to content</a><header><div class="wrap bar"><a class="brand" href="index_en.html"><span class="monogram" aria-hidden="true">tg</span>Théo Guichard</a><nav aria-label="Main navigation"><a href="autreproj_en.html">Projects</a><a href="experiences_en.html">Experience</a><a href="Moi_en.html">About</a><a href="LDLC_en.html">Education</a><a href="Contact_en.html" aria-current="page">Contact</a></nav><div class="lang"><a hreflang="fr" lang="fr" href="Contact.html">FR</a></div></div></header><main id="main" class="wrap"><article class="detail"><a class="back" href="index_en.html">← Home</a><h1>Contact</h1><div class="contacts-column">
          <p>The downloadable résumés below are earlier editions. See <a href="Moi_en.html">my current profile</a> for my apprenticeship search.</p>
       <div class="contact-container">
-        <img class="contact-icon" src="linkedin_black_logo_icon.png" alt="LinkedIn">
-        <a class="frame__prev2" target="_blank" href="https://www.linkedin.com/in/th%C3%A9o-guichard-9b30832b9/">
+        <a class="frame__prev2" target="_blank" href="https://www.linkedin.com/in/th%C3%A9o-guichard-9b30832b9/" rel="noopener">
           LinkedIn – Théo Guichard
         </a>
       </div>
 
       <div class="contact-container">
-        <img class="contact-icon" src="gmail_black.png" alt="Email">
         <a id="email-link" class="frame__prev2" href="mailto:theo.guichard01@gmail.com">
           theo.guichard01@gmail.com
         </a>
         <div class="contact-actions">
-          <button id="copy-email" class="btn-copy" type="button">
-            <i class="fa-regular fa-copy"></i> Copy
-          </button>
+          <button id="copy-email" class="btn-copy" type="button">Copy</button>
         </div>
       </div>
 
       <div class="contact-container">
-        <img class="contact-icon" src="pdf_icon.png" alt="CV PDF">
         <a class="frame__prev2" href="CV-Theo-Guichard.pdf" download="CV_Theo_Guichard.pdf">
           Previous CV in French (PDF)
         </a>
         <div class="contact-actions">
-          <a class="btn-copy btn-download" href="CV-Theo-Guichard.pdf" target="_blank" rel="noopener">
-            <i class="fa-solid fa-eye"></i> View
-          </a>
+          <a class="btn-copy btn-download" href="CV-Theo-Guichard.pdf" target="_blank" rel="noopener">View PDF</a>
         </div>
-      </div> <!-- ✅ fermé correctement -->
-
-      <div class="contact-container">
-        <img class="contact-icon" src="pdf_icon.png" alt="CV PDF (EN)">
+      </div> <div class="contact-container">
         <a class="frame__prev2" href="Theo_Guichard_Resume_EN.pdf" download="Theo_Guichard_Resume_EN.pdf">
           Previous CV in English (PDF)
         </a>
         <div class="contact-actions">
-          <a class="btn-copy btn-download" href="Theo_Guichard_Resume_EN.pdf" target="_blank" rel="noopener">
-            <i class="fa-solid fa-eye"></i> View
-          </a>
+          <a class="btn-copy btn-download" href="Theo_Guichard_Resume_EN.pdf" target="_blank" rel="noopener">View PDF</a>
         </div>
       </div>
     </div>
 
-    <div class="info">
-      <a class="frame__prev" href="index_en.html">
-        <i class="fa-solid fa-arrow-left"></i> Back to main menu
-      </a>
-    </div>
-  </main>
-
-  <footer id="footer">
-    <p>&copy; 2024 Théo Guichard – Portfolio GitHub</p>
-  </footer>
-
-  <script>
+    </article></main><footer><div class="wrap"><span>Théo Guichard</span><div><a href="Contact_en.html" aria-current="page">Contact</a><a href="https://github.com/THE02004">GitHub ↗</a></div></div></footer><script>
     // Copy email
     (function(){
       const copyBtn = document.getElementById('copy-email');
@@ -274,5 +58,4 @@
       }
     })();
   </script>
-</body>
-</html>
+</body></html>
