@@ -65,20 +65,23 @@ body { background: #100e19; }
 .dcr-brand {
   display: grid;
   place-items: center;
-  background: #f8f9f6;
+  background: #19212c;
   border-radius: 10px;
   margin-bottom: 28px;
 }
-.story .dcr-brand img { width: min(260px, 85%); height: auto; margin: -18px 0; }
-.card:has(.dcr-cover) { background: #eef1ed; }
+.story .dcr-brand img { width: min(420px, 85%); height: auto; margin: 24px 0; }
+.card-grid .card:has(.dcr-cover) { background: #19212c; }
 .card:has(.dcr-cover)::after { background: linear-gradient(0deg, #110e1a 0%, #21192bd9 24%, transparent 65%); }
-.card:has(.dcr-cover) .card__date { color: #282235; }
+.card:has(.dcr-cover) .card__date { color: #eee3ff; }
 .dcr-cover, .dcr-cover .card__img-inner {
-  background-size: auto 110%;
+  background-size: 81% auto;
   background-repeat: no-repeat;
-  background-position: center 37%;
+  background-position: center 28%;
   filter: none;
 }
 @media (max-width: 540px) {
   .story .bio-portrait { float: none; display: block; width: 145px; margin: 0 auto 22px; }
 }
+
+.school-badge { position: absolute; top: 14px; right: 14px; width: clamp(50px, 6vw, 76px); height: auto; border-radius: 8px; pointer-events: none; }
+.story .school-logo { display: block; width: 116px; border-radius: 8px; margin: 16px 0; }
