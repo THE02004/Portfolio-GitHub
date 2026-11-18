@@ -1,7 +1,7 @@
 
 # Portfolio de Théo Guichard
 
-Bienvenue sur le dépôt GitHub de mon portfolio. Ce site présente mes compétences, mes projets et mes passions dans le domaine de la technologie.
+Je présente ici mon parcours à IRIIG et à l’École LDLC, mon projet entrepreneurial DCR Solutions et mes réalisations chez Dive Lyon. [Consulter le portfolio](https://the02004.github.io/Portfolio-GitHub/).
 
 ## À propos du site
 
