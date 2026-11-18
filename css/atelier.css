@@ -83,5 +83,6 @@ body { background: #100e19; }
   .story .bio-portrait { float: none; display: block; width: 145px; margin: 0 auto 22px; }
 }
 
-.school-badge { position: absolute; top: 14px; right: 14px; width: clamp(50px, 6vw, 76px); height: auto; border-radius: 8px; pointer-events: none; }
+.card-grid .card:has(.iriig-cover) { background-color: #201f1d; }
+.iriig-cover, .iriig-cover .card__img-inner { background-size: auto 55%; background-position: center 24%; background-repeat: no-repeat; }
 .story .school-logo { display: block; width: 116px; border-radius: 8px; margin: 16px 0; }
