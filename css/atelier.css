@@ -51,3 +51,34 @@ body { background: #100e19; }
 @media(min-width:680px) and (max-width:959px) { .card-grid { grid-template-columns:repeat(2,1fr); } }
 @media(max-width:680px) { .cover-copy { width:100%; padding-top:60px; }.cover {min-height:0}.terrain {width:70%;height:52%;right:-28%;top:8%;opacity:.55}.cover-intro {max-width:32ch}.story .frame {max-width:70%}.card-grid {gap:12px}.card-grid .card {min-height:220px} }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } .cover video { display:none; } }
+
+
+.story .bio-portrait {
+  float: right;
+  width: clamp(150px, 28%, 205px);
+  height: auto;
+  margin: 0 0 20px 28px;
+  border-radius: 12px;
+  border: 1px solid #756886;
+}
+.bio-story { display: flow-root; }
+.dcr-brand {
+  display: grid;
+  place-items: center;
+  background: #f8f9f6;
+  border-radius: 10px;
+  margin-bottom: 28px;
+}
+.story .dcr-brand img { width: min(260px, 85%); height: auto; margin: -18px 0; }
+.card:has(.dcr-cover) { background: #eef1ed; }
+.card:has(.dcr-cover)::after { background: linear-gradient(0deg, #110e1a 0%, #21192bd9 24%, transparent 65%); }
+.card:has(.dcr-cover) .card__date { color: #282235; }
+.dcr-cover, .dcr-cover .card__img-inner {
+  background-size: auto 110%;
+  background-repeat: no-repeat;
+  background-position: center 37%;
+  filter: none;
+}
+@media (max-width: 540px) {
+  .story .bio-portrait { float: none; display: block; width: 145px; margin: 0 auto 22px; }
+}
