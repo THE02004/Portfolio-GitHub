@@ -1,5 +1,68 @@
-<!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Expériences · Théo Guichard</title><meta name="description" content="Portfolio de Théo Guichard, étudiant à IRIIG en recherche d’alternance en innovation à Lyon."><link rel="icon" href="favicon.ico"><link rel="stylesheet" href="css/portfolio.css"></head><body><a class="skip" href="#main">Aller au contenu</a><header><div class="wrap bar"><a class="brand" href="index.html"><span class="monogram" aria-hidden="true">tg</span>Théo Guichard</a><nav aria-label="Navigation principale"><a href="autreproj.html">Projets</a><a href="experiences.html" aria-current="page">Expériences</a><a href="Moi.html">À propos</a><a href="LDLC.html">Formation</a><a href="Contact.html">Contact</a></nav><div class="lang"><a hreflang="en" lang="en" href="experiences_en.html">EN</a></div></div></header><main id="main" class="wrap"><article class="detail"><a class="back" href="index.html">← Accueil</a><h1>Expériences</h1><div class="info">
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+  <style>
+        .lang-switch {
+        position: fixed;      /* reste toujours visible */
+        top: 15px;
+        right: 15px;
+        display: flex;
+        gap: 10px;            /* espace entre les drapeaux */
+        z-index: 1000;        /* au-dessus du contenu */
+      }
+
+      .lang-switch img {
+        width: 32px;          /* taille des drapeaux */
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+
+      .lang-switch img:hover {
+        transform: scale(1.1); /* petit effet au survol */
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes expériences pro — Théo Guichard</title>
+  <meta name="description" content="Expériences professionnelles de Théo Guichard : freelance, Dive Lyon, projets et stages." />
+  <meta name="author" content="Théo Guichard" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/splitting.css" />
+  <link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+      var e, t = document.createElement("style");
+      t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t),
+      e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")),
+      t.parentNode.removeChild(t);
+      return e;
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+  </script>
+<link rel="stylesheet" href="css/atelier.css">
+</head>
+<body class="story">
+  <div class="lang-switch">
+  <a href="experiences.html"><img src="fr_flag.svg" alt="Français"></a>
+  <a href="experiences_en.html"><img src="en_flag.svg" alt="English"></a>
+  </div>
+  <main>
+    <div class="frame">
+      <h1 class="frame__title">Mon portfolio. <a target="_blank" href="https://github.com/THE02004">github</a></h1>
+      <a class="frame__back" href="index.html">//Retourner au menu principal</a>
+      <br/>
+    </div>
+
+    <div class="title"><span>Mes expériences professionnelles</span></div>
+    <p class="subtitle">Un aperçu de mon parcours professionnel.</p>
+
+    <div class="info">
+      <!-- FREELANCE -->
       <h2>Développeur freelance — TPE/PME</h2>
       <p class="meta">2024 — <strong>août 2025</strong> (activité close pour me consacrer à Dive Lyon)</p>
       <ul>
@@ -12,10 +75,11 @@
 
       <hr>
 
+      <!-- DIVE LYON -->
       <h2>Développeur Full Stack — Dive Lyon</h2>
       <p class="meta">Stage (2024) → Sous-traitance (2025)</p>
       <ul>
-        <li><strong>Stocks &amp; commandes</strong> : page <strong>PHP</strong> dédiée pour accélérer la réception et la gestion des flux.</li>
+        <li><strong>Stocks & commandes</strong> : page <strong>PHP</strong> dédiée pour accélérer la réception et la gestion des flux.</li>
         <li><strong>Automatisation</strong> : scripts <strong>Python</strong> (suivi des gonflages, contrôle cohérence, consolidation de données).</li>
         <li><strong>Perfex CRM</strong> : adaptations métier (process, vues, exports) pour coller aux besoins opérationnels.</li>
         <li><strong>Analyse CA</strong> : outils de suivi (bases produits à jour, reporting simple et actionnable).</li>
@@ -28,6 +92,7 @@
 
       <hr>
 
+      <!-- MINAGE ETHEREUM -->
       <h2>Projet personnel — Minage d’Ethereum</h2>
       <p class="meta">2021 — 2022</p>
       <ul>
@@ -42,16 +107,33 @@
 
       <hr>
 
+      <!-- STAGES -->
       <h2>Premiers stages — Découverte du monde du travail</h2>
       <p class="meta">2019 — 2023</p>
       <ul>
-        <li><strong>Concept Son Média France</strong> (2023) — Évènementiel &amp; logistique technique.</li>
+        <li><strong>Concept Son Média France</strong> (2023) — Évènementiel & logistique technique.</li>
         <li><strong>Préfecture de Bourg-en-Bresse</strong> (2022) — Support et maintenance informatique.</li>
-        <li><strong>EEA Bourg-en-Bresse</strong> (2021) — Initiation à l’électricité (terrain &amp; sécurité).</li>
+        <li><strong>EEA Bourg-en-Bresse</strong> (2021) — Initiation à l’électricité (terrain & sécurité).</li>
         <li><strong>Razurel et Fils, Viriat</strong> (2019) — Électroménager, premier contact clientèle.</li>
       </ul>
 
       <p>
-        </p>
+        <a class="frame__prev" href="index.html">
+          <i class="fas fa-arrow-left"></i> Retourner au menu principal
+        </a>
+      </p>
     </div>
-  </article></main><footer><div class="wrap"><span>Théo Guichard</span><div><a href="Contact.html">Contact</a><a href="https://github.com/THE02004">GitHub ↗</a></div></div></footer></body></html>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2026 Théo Guichard Portfolio GitHub</p>
+    
+  </footer>
+
+  <script src="js/gsap.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/splitting.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
+

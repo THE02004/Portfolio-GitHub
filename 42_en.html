@@ -1,5 +1,55 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>42 Piscine · Théo Guichard</title><meta name="description" content="Portfolio of Théo Guichard, an IRIIG student looking for an innovation apprenticeship in Lyon."><link rel="icon" href="favicon.ico"><link rel="stylesheet" href="css/portfolio.css"></head><body><a class="skip" href="#main">Skip to content</a><header><div class="wrap bar"><a class="brand" href="index_en.html"><span class="monogram" aria-hidden="true">tg</span>Théo Guichard</a><nav aria-label="Main navigation"><a href="autreproj_en.html">Projects</a><a href="experiences_en.html">Experience</a><a href="Moi_en.html">About</a><a href="LDLC_en.html">Education</a><a href="Contact_en.html">Contact</a></nav><div class="lang"><a hreflang="fr" lang="fr" href="42.html">FR</a></div></div></header><main id="main" class="wrap"><article class="detail"><a class="back" href="index_en.html">← Home</a><h1>42 Piscine</h1><div class="info">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<style>
+    .lang-switch {
+  position: fixed;      /* reste toujours visible */
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;            /* espace entre les drapeaux */
+  z-index: 1000;        /* au-dessus du contenu */
+}
+
+.lang-switch img {
+  width: 32px;          /* taille des drapeaux */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lang-switch img:hover {
+  transform: scale(1.1); /* petit effet au survol */
+}
+</style>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Théo Guichard portfolio</title>
+    <meta name="description" content="Informations supplémentaires sur le Space Invader de Théo Guichard" />
+    <meta name="keywords" content="space invader, Théo Guichard, jeu, GitHub, Raylib, programmation, pause" />
+    <meta name="author" content="Théo Guichard" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/splitting.css" />
+    <link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/atelier.css">
+</head>
+<body class="story">
+    <div class="lang-switch">
+    <a href="42.html"><img src="fr_flag.svg" alt="Français"></a>
+    <a href="42_en.html"><img src="en_flag.svg" alt="English"></a>
+    </div>
+    <main>
+        <div class="frame">
+            <h1 class="frame__title">My portfolio.<a target="_blank" href="https://github.com/THE02004">github</a></h1>
+            <a class="frame__back" href="index_en.html">//Back to main menu</a>
+            <br/>
+        </div>
+        <div class="title"><span>Additional information</span></div>
+        <p class="subtitle">42 Coding Bootcamp (Piscine)</p>
+        <div class="info">
         <p>
             Hello everyone,<br>
         </p>
@@ -23,10 +73,26 @@
         </p>
         <div class="marge">
             <p>
-                <a class="frame__prev" target="_blank" href="https://github.com/THE02004/Piscine-" rel="noopener">View my exercises on GitHub</a>
+                <a class="frame__prev" target="_blank" href="https://github.com/THE02004/Piscine-">
+                    <i class="fas fa-code"></i> Collection of my exercises at 42
+                </a>
             </p>
         <p>
-            </p>
+            <a class="frame__prev" href="index_en.html">
+                <i class="fas fa-arrow-left"></i> Back to main menu
+            </a>
+        </p>
         </div>
         </div>
-    </article></main><footer><div class="wrap"><span>Théo Guichard</span><div><a href="Contact_en.html">Contact</a><a href="https://github.com/THE02004">GitHub ↗</a></div></div></footer></body></html>
+    </main>
+        <footer id="footer">
+            <p>&copy; 2026 Théo Guichard GitHub Portfolio</p>
+            
+        </footer>
+    
+</body>
+<script src="js/gsap.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/splitting.min.js"></script>
+<script type="module" src="js/index.js"></script>
+</html>

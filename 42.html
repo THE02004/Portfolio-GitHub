@@ -1,5 +1,64 @@
-<!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Piscine de 42 · Théo Guichard</title><meta name="description" content="Portfolio de Théo Guichard, étudiant à IRIIG en recherche d’alternance en innovation à Lyon."><link rel="icon" href="favicon.ico"><link rel="stylesheet" href="css/portfolio.css"></head><body><a class="skip" href="#main">Aller au contenu</a><header><div class="wrap bar"><a class="brand" href="index.html"><span class="monogram" aria-hidden="true">tg</span>Théo Guichard</a><nav aria-label="Navigation principale"><a href="autreproj.html">Projets</a><a href="experiences.html">Expériences</a><a href="Moi.html">À propos</a><a href="LDLC.html">Formation</a><a href="Contact.html">Contact</a></nav><div class="lang"><a hreflang="en" lang="en" href="42_en.html">EN</a></div></div></header><main id="main" class="wrap"><article class="detail"><a class="back" href="index.html">← Accueil</a><h1>Piscine de 42</h1><div class="info">
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<style>
+    .lang-switch {
+  position: fixed;      /* reste toujours visible */
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;            /* espace entre les drapeaux */
+  z-index: 1000;        /* au-dessus du contenu */
+}
+
+.lang-switch img {
+  width: 32px;          /* taille des drapeaux */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lang-switch img:hover {
+  transform: scale(1.1); /* petit effet au survol */
+}
+</style>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Théo Guichard portfolio</title>
+    <meta name="description" content="Informations supplémentaires sur le Space Invader de Théo Guichard" />
+    <meta name="keywords" content="space invader, Théo Guichard, jeu, GitHub, Raylib, programmation, pause" />
+    <meta name="author" content="Théo Guichard" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/fiv8wyx.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/splitting.css" />
+    <link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+    
+<link rel="stylesheet" href="css/atelier.css">
+</head>
+<body class="story">
+    <div class="lang-switch">
+    <a href="42.html"><img src="fr_flag.svg" alt="Français"></a>
+    <a href="42_en.html"><img src="en_flag.svg" alt="English"></a>
+    </div>
+    <main>
+        <div class="frame">
+            <h1 class="frame__title">Mon portfolio.<a target="_blank" href="https://github.com/THE02004">github</a></h1>
+            <a class="frame__back" href="index.html">//Retourner au menu principal</a>
+            <br/>
+        </div>
+        <div class="title"><span>Informations supplémentaires</span></div>
+        <p class="subtitle">sur ma piscine a 42.</p>
+        <div class="info">
             <p>
                 Bonjour à tous,<br>
             </p>
@@ -24,12 +83,25 @@
             </p>
             <div class="marge">
                 <p>
-                    <a class="frame__prev" target="_blank" href="https://github.com/THE02004/Piscine-" rel="noopener">Voir mes exercices sur GitHub</a>
+                    <a class="frame__prev" target="_blank" href="https://github.com/THE02004/Piscine-">
+                        <i class="fas fa-code"></i> Collection de mes exercices réalisés à 42
+                    </a>
                 </p>
             <p>
+            <a class="frame__prev" href="index.html">
+                <i class="fas fa-arrow-left"></i> Retourner au menu principal
+            </a>
             </p>
-        
+        </main>
         <footer id="footer">
-            <p>© 2024 Théo Guichard Portfolio GitHub</p>
-            </footer> 
-    </div></div></article></main><footer><div class="wrap"><span>Théo Guichard</span><div><a href="Contact.html">Contact</a><a href="https://github.com/THE02004">GitHub ↗</a></div></div></footer></body></html>
+            <p>&copy; 2026 Théo Guichard Portfolio GitHub</p>
+            
+        </footer> 
+    
+</body>
+<script src="js/gsap.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/splitting.min.js"></script>
+<script type="module" src="js/index.js"></script>
+</html>
+
